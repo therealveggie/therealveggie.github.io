@@ -1,0 +1,2 @@
+Clean jQuery solution for the page height:
+	If the height of the div is less than a page, make it a page. Otherwise 

@@ -1,37 +1,269 @@
-body{
-	font: 15px/1.5 Arial, Helvetica, sans-serif
-	padding:0;
-	margin:0;
-	background-color: #f4f4f4;
+:root{
+	--isab: #F6F7EB;
+	--slb: #6F8AB7;
+	--lapis:#2660A4;
+	--indep: #424874;
+	--jet: #333333;
 }
 
-.container{
-	width:100%;
-	margin: auto;
+body{
+	margin: 0;
+	padding: 0;
+	background-color: 	var(--jet);
+}
+
+.page{
+	padding-top: 4vh;
+	width:  100%;
+	background-color: 	var(--jet);
+	color: var(--isab);
+	/*height: 100vh;*/
+}
+
+
+#nav {
+	width: 100%;
+	position: fixed;
+	top:0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222222;
+}
+
+#navli {
+    float: left;
+}
+
+#navli a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Nunito
+}
+
+/* Change the link color to #111 (black) on hover */
+#navli a:hover {
+    background-color: #111;
+    color: var(--lapis);
+}
+
+#landing_div{
+	height: 50vh;
+	float:bottom;
+	position:relative;
+	top: 50%;
+	text-align: center;
+}
+
+#landing_img{
+	height: 50vh;
+	background-color: 	var(--isab);
+	float: top;
+}
+
+
+.title{
+	font-family: Raleway;
+	font-size: 55px;
+	margin-bottom: 4px;
+	margin-top: 10px;
+}
+
+.subtitle{
+	font-family: Josefin Sans;
+	font-size: 23px;
+	margin-top:0px;
+	color: 	var(--slb);
+}
+
+h1{
+	text-align: center;
+}
+
+.bar{
+	background-color: var(--lapis);
+	height: 3px;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+/*						PROJECT CSS					*/
+
+.proj_title
+{
+	font-family: Raleway;
+}
+
+.proj_item
+{
+	margin-left: 1%;	
+}
+
+.proj_desc
+{
+	margin-left: 1%;
+}
+
+p {
+	font-family: Nunito;
+}
+
+#proj_list{
+	background-color: 	var(--jet);
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#left_list{
+	margin-top: 10px;
+	float: left;
+	width: 46.5%;
+	background-color: var(--jet);
+}
+
+#right_list{
+	margin-top: 10px;
+	float: right;
+	width: 46.5%;
+	background-color: var(--jet);
+}
+
+/*							CONTACT ME CSS				*/
+
+#contact_page{
 	overflow: hidden;
 }
 
-ul{
-	margin:0;
-	border:0;
+#contact_content{
+	height: 70%
 }
 
-header{
-	background: #2c3e50;
-	color: #ecf0f1;
-	padding-top: 30px;
-	padding-left: 10px;
-	min-height: 70px;
-	border-bottom: #3498db 3px solid;
+#contact_table{
+	position: relative;
+	top:5%;
+	text-align: center;
 }
 
-header a{
-	color: #ecf0f1;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 16px;
-}
-
-header h1{
+#contact_type{
+	width: 49%;
 	float: left;
+	text-align: right
 }
+
+
+#contact_info{
+	width: 49%;
+	float: right;
+	text-align: left;
+}
+.type{
+	font-family: Nunito;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.item
+{
+	font-family: Nunito;
+	margin-top: 5px;
+	margin-bottom: 5px;	
+}
+
+
+/*						About Me*/
+#about_page{
+	display: table;
+}
+
+.highlight{
+	font-family: Raleway;
+	font-size: 25px;
+	margin-bottom: 4px;
+	margin-top: 10px;
+
+}
+
+#abtwrp{
+	float:left;
+}
+
+#abtwrp2{
+	width: 70%;
+	padding: 15%; 
+}
+
+#about_img{
+	float:left;
+	display: flex;
+	margin:30px;
+	align-items: center;
+	height: 80%;
+}
+
+#face{
+	object-fit: contain;
+	padding-right: 5%;
+	padding-left: 15%;
+	width: 80%;
+	height: 80%;
+}
+
+
+#about_div{
+	
+	margin:30;
+	display: flex;
+	align-items: center;
+
+}
+
+#aboutp{
+	font-family: Nunito;
+	font-size: 20px;
+	margin: 20px;
+}
+
+#aboutd{
+	font-family: Nunito;
+	font-size: 20px;
+	margin: 20px;
+}
+
+a {
+	color: var(--slb);
+	font-family: Josefin Sans;
+	text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

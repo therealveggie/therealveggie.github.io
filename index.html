@@ -1,31 +1,166 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<meta name="description" content="Ganashsai Vannithamby's first website">
-		<meta name="author" content="Ganashsai Vannithamby">
-		<title>Ganashsai Vannithamby | Welcome</title>
-		<link rel="stylesheet" href="./css/styles.css">
-	</head>
-	<body class ="main">
-		<header>
-			<div class="container">
-				<nav>
-					<ul>
-						<li class = "current"><a href="index.html">Home</a></li>
-						<li><a href="projects.html">Projects</a></li>
-						<li><a href="contact.html">Contact Me</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Ganashsai Vannithamby's Personal Website">
+	<meta name="author" content="Ganashsai Vannithamby">
 
-		<section id = "showcase">
-			<div class = "main-container">
-				<h1>Ganashsai Vannithamby </h1>
-				<p>University of Waterloo: Computer Engineering</p>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Nunito|Raleway" rel="stylesheet">
+	<script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" href="styles.css">
+	<script src = "js/main.js" type = "text/javascript"></script>
+
+	
+
+	<title>Ganashsai Vannithamby</title>
+	<link rel="stylesheet" href="">
+</head>
+
+
+	
+<body>
+	
+	<header id="header">
+			<ul id="nav">
+				<li id="navli"><a href = "#landing_page">Home</a></li>
+				<li id ="navli"><a href = "#about_page">About</a></li>-->
+				<li id="navli"><a href = "#project_page">Projects</a></li>
+				<li id="navli"><a href = "#contact_page">Contact</a></li>
+			</ul>
+	</header>
+
+	<div id = "landing_page" class = "page">
+		<div id="landing_img"></div>
+		<div id = "landing_div">
+			<h1 class = "title">Ganashsai Vannithamby</h1>
+			<p class = "subtitle"> 1B University Of Waterloo Computer Engineering</p>
+		</div>
+	</div>
+
+	<div id = "about_page" class = page>
+		<h1 class = "title">About Me</h1>
+		<div class="bar"></div>
+		<div id="abtwrp"><div id="about_img">
+			<img id="face" src="img/face.png" />
+		</div></div>
+		<div id="about_div">
+			<div id="abtwrp2">
+				<h1 class = "highlight"> Hi, my name is Ganashsai. Nice to Meet you! </h1>
+
+				<p id="aboutp">I am a student from the University of Waterloo, currently studying Computer Engineering. I am interested in Web Developement, and Machine Learning. My non-academic interests are Competitve Programming on DMOJ, Hackathons, Overwatch, and Anime. Hope to get in touch with you soon!</p>
+
+				<a id="aboutd" href="img/GanashsaiVannithamby.pdf" download> Download my resume</a>
+			</div>
+		</div>
+	</div>
+
+	<div id = "project_page" class = "page">
+		<section id = "main">
+			<div class= "container">
+				<div id="center_wrap"><h1 class = "title">Projects</h1></div>
+				<div class = "bar"></div>
+
+				<div id = "proj_list">
+					<div id = "left_list">
+						<div class = "proj_item">
+							<h3 class = "proj_title"> SRT Website </h3>
+
+							<div class = "proj_desc">
+								<p>
+									As a part of my first work term in health canada, I had the oppurtunity to create a website for the screening and review tool (SRT) that we are developing. It's main function is to serve as a place for users of the SRT where they can find out how to use the tool, and who to contact. 
+								</p>
+
+								<a href="https://github.com/therealveggie/HC_SRT"> View the Code </a>
+							</div>
+						</div>
+
+						<div class = "proj_item">
+							<h3 class = "proj_title"> HourTime </h3>
+
+							<div class = "proj_desc">
+								<p>
+									A friend and I had noticed that even though it is quite trivial to compare scehdules between users that use the same platform (such as outlook, or google calendar), it is a bit of a pain to do so if you use different platforms. So at Ottahacks 2018, we made a website that would require the user to just enter the emails and passwords of the accounts. Then the program will automatically determine what free time is available during that week.
+
+									This was my first time dealing with both Django and OAuth, it was quite a challenge. But I really enjoyed it.  
+								</p>
+
+								<a href="https://github.com/therealveggie/HourTime"> View the Code </a>
+							</div>
+						</div>
+
+						<div class = "proj_item">
+							<h3 class = "proj_title"> Rhythm Master </h3>
+
+							<div class = "proj_desc">
+								<p>
+									A rhythm game inspired by Tap Tap Revenge and StepMania. On top of the standard rhythm game we also added in a creator mode, where a user can create their own songs, and their own beatmaps to play with. This was built in Java for our grade 12 computer science summative.
+								</p>
+
+								<a href="https://github.com/therealveggie/ProjectAlpha"> View the Code </a>
+							</div>
+						</div>
+					</div>
+
+					<div id = "right_list">
+						<div class = "proj_item">
+							<h3 class = "proj_title"> WatFood </h3>
+
+							<div class = "proj_desc">
+								<p>
+									A website that shows users what stores in the area accept WatCard as a form of payment. As freshmen at the University of Waterloo, there wasn't much awarness in terms of what ways we can use our WatCard, so a few friends and I made this for the PortalHack competion 
+								</p>
+
+								<a href="https://github.com/therealveggie/WatFood"> View the Code</a>
+
+							</div>
+						</div>
+
+						<div class = "proj_item">
+							<h3 class = "proj_title"> Tapper </h3>
+
+							<div class = "proj_desc">
+								<p>
+									Using 2 Onion Omega boards we used light to wirelessly transmit messages. By flashing LEDs at photoresitors using morse code we were able to transmit messages as long as the LED and Photoresitor were in close proximity. This was made for the ECE 150 final.
+								</p>
+
+								<a href="https://github.com/therealveggie/ece150Translator"> View the Code</a>
+							</div>
+						</div>
+
+						
+
+						
+					</div>
+
 			</div>
 		</section>
-	</body>
+	</div>
+
+	<div id = "contact_page" class = "page">
+		<h1 class = "title">Contact Me</h1>
+		<div class = "bar"></div>
+
+		<div id = "contact_content">
+			<div id = "contact_table">
+				<div id = "contact_type">
+					<div class = "type"> Phone </div>
+					<div class = "type"> Email </div>
+					<div class = "type"> LinkedIn </div>
+					<div class = "type"> GitHub </div>
+				</div>
+
+				<div id = "contact_info">
+					<div class = "item"> (647) 391-8672 </div>
+					<div class = "item"> gkvannit@uwaterloo.ca </div>
+					<div class = "item"> ganashsai vannithamby </div>
+					<div class = "item"> therealveggie </div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
 </html>
