@@ -241,6 +241,22 @@ a {
 }
 
 
+@media only screen and (max-width: 950px){
+	#about_img{
+		float: none;
+		height: 50%;
+	}
+	#abtwrp{
+		float: none;
+	}
+	#abtwrp2{
+		padding-top: 5%;
+	}
+	#about_div{
+		align-items: initial;
+	}
+}
+
 
 
 

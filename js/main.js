@@ -19,9 +19,26 @@ $(document).ready(function(){
 	{
 		$("#contact_page").height($(window).height());		
 	}
+
 	$("#about_img").height($(window).height()-$('.title').height()-3)
 	$("#about_div").height($("#abtwrp").height());
+	
+	if ($(window).width()<950){
+		$("#about_img").height(400);
+	}
+	
+	
 
+	$(window).resize(function(){
+		if ($(window).width()<950){
+			$("#about_img").height(400);
+
+		}
+		else{
+			$("#about_img").height($(window).height()-$('.title').height()-3)
+			$("#about_div").height($("#abtwrp").height());		
+		}
+	})
 
 	// Select all links with hashes
 	$('a[href*="#"]')
