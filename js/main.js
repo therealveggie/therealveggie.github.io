@@ -31,7 +31,7 @@ $(document).ready(function(){
 
 	$(window).resize(function(){
 		if ($(window).width()<950){
-			$("#about_img").height(400);
+			$("#about_img").height("50%");
 
 		}
 		else{

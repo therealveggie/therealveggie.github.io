@@ -202,6 +202,7 @@ p {
 	margin:30px;
 	align-items: center;
 	height: 80%;
+	width: 50vw;
 }
 
 #face{
@@ -244,7 +245,10 @@ a {
 @media only screen and (max-width: 950px){
 	#about_img{
 		float: none;
-		height: 50%;
+		height: auto;
+		width: 70vw;
+		margin-right: 15vw;
+		margin-left: 15vw; 
 	}
 	#abtwrp{
 		float: none;
@@ -254,6 +258,15 @@ a {
 	}
 	#about_div{
 		align-items: initial;
+	}
+	#right_list{
+		float: none;
+		width: 94%;
+		margin-left, margin-right: 3%;
+	}
+	#left_list{
+		width: 94%;
+		margin-left, margin-right: 3%;	
 	}
 }
 
